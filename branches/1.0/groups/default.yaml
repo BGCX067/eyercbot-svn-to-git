@@ -1,0 +1,6 @@
+# See example.yaml for example
+---
+name: default
+permissions:
+- plugins here
+---

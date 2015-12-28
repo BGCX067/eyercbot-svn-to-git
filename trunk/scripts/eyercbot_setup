@@ -1,0 +1,204 @@
+#!/usr/bin/env python3
+
+"""
+Wizard for setting up an EyeRCbot
+"""
+
+import yaml
+
+import textwrap, os, glob
+
+from eyercbot import CONFIG_VERSION
+
+def output(text, unformatted=False):
+    if not unformatted:
+        text = textwrap.fill(text, width=65)
+    print(text)
+    
+def prompt(text, default= None, boolian=False, require=False):
+    """
+    User inputs something.
+    boolian: True/False response
+    default:    default response
+    require:    require response
+    """
+    spin = True
+    text += " "
+    entry = input(text)
+    if boolian:
+        print("Bool prompt")
+        spin = True
+        while spin:
+            if entry.lower() == "y" or entry.lower() == "yes":
+                entry = True
+            elif entry.lower() == "n" or entry.lower() == "no":
+                entry = False
+            if isinstance(entry, bool):
+                break
+            if not require and entry == "":
+                break
+            else:
+                output("A yes or no answer is required")
+            
+    elif require:
+        print("Require prompt")
+        while spin:
+            if entry != '':
+                break
+            else:
+                output("""An entry is required""")
+    if not entry:
+        entry = default
+    return entry
+
+def main():
+    database = {}
+    
+    database['configVersion'] = CONFIG_VERSION
+    
+    # Test for existing install
+    if glob.glob('*.yaml'):
+        filename = glob.glob('*.yaml')[0]
+        stream = open(filename)
+        existingDatabase = yaml.load(stream)
+        stream.close()
+        if existingDatabase['configVersion'] is CONFIG_VERSION:
+            output("""There is an existing, uptodate install at this location.  Please restart the program and select another folder.""")
+            return
+        else:
+            upgradeBool = prompt("There is an existing, out of date install here.  Would you like to upgrade? A no answer will exit the program.", boolian = True)
+            if upgradeBool:
+                upgrade(existingDatabase, filename)
+                output("""Finished Upgrades""")
+                return True
+            return
+        
+    output("""Welcome to EyeRCbot set up.  This wizard will generate your 
+bot's configuration file and associated folders.""")
+    
+    output("""Your bot will need a small number of files and folders to 
+store configuration, logs, custom plugins, etc.""")
+
+    output("""If you are upgrading your bot, please enter the parent directory then the bot name in the respective prompts.""")
+    
+    basedir = prompt("Where do you want to create these files? Default: " + os.getcwd(), default=os.getcwd()) 
+    basedir = basedir + "/"
+
+    database['nick'] = prompt("What is the nickname of the bot?", require = True)        
+    
+    database['basedir'] = basedir + database['nick'] + "/"
+    database['logdir'] = "logs/"
+    database['userdir'] = "users/"
+    database['configdir'] = "config/"
+    database['pluginsdir'] = "plugins/"
+    database['groupsdir'] = "groups/"
+    database['datadir'] = "data/"
+    
+    database['logs'] = 'info'
+    database['plugins'] = ['admin']
+    database['plugin_config'] = {}
+    
+    output("""What is the name of the server you wish to connect to. Not the 
+host address, but an identifiable name""")
+
+    database['servers'] = {}
+    
+    name = prompt("Name: ", require = True)
+    
+    database['servers'][name] = {}
+    
+    database['servers'][name]['server'] = prompt("What is the server address?", require = True)
+    
+    output("""If the port is not 6667, please enter the port of ther server here""")
+    database['servers'][name]['port'] = int(prompt("Port (6667): ", default="6667"))
+    
+    chans = prompt("In a space deliminated list, what channels will the bot be joining?")
+    database['servers'][name]['channels'] = chans.split()
+    
+    command = prompt("What character will will bot reconize as a command? (!): ", default="!")
+    database['servers'][name]['command'] = command
+    
+    # Other stuff
+    
+    # Write to disk
+    if not os.path.isdir(database['basedir']):
+        os.mkdir(database['basedir'])
+    if not os.path.isdir(database['basedir'] + database['logdir']):
+        os.mkdir(database['basedir'] + database['logdir'])
+    if not os.path.isdir(database['basedir'] + database['userdir']):
+        os.mkdir(database['basedir'] + database['userdir'])
+    if not os.path.isdir(database['basedir'] + database['configdir']):
+        os.mkdir(database['basedir'] + database['configdir'])
+    if not os.path.isdir(database['basedir'] + database['pluginsdir']):
+        os.mkdir(database['basedir'] + database['pluginsdir'])
+    if not os.path.isdir(database['basedir'] + database['datadir']):
+        os.mkdir(database['basedir'] + database['datadir'])
+    if not os.path.isdir(database['basedir'] + database['groupsdir']):
+        os.mkdir(database['basedir'] + database['groupsdir'])
+    
+    
+    path = database['basedir'] + database['nick'] + ".yaml"
+    print("Saving configuration to:", path)
+    saveConfig(path, database)
+    
+    default_group = {"name": "default", "whitelist": ["search", "user.register", "user.whoami"], "blacklist": []}
+    path = database['basedir'] + database['groupsdir'] + "default.yaml"
+    stream = open(path, 'w')
+    yaml.dump(default_group, stream)
+    print("Saving default group")
+    stream.close()
+    
+    output("""What I need you to do when I join the channel, and this is very important, is to private message me the following:\n\npassword: yourpassword\n\nThis password is encrypted, that is how important it is.  This password will let me know that you are really you and you are my owner.  Respond with just your password.""")
+        
+    return True
+
+def saveConfig(path, database):
+    stream = open(path, 'w')
+    yaml.dump(database, stream)
+    print("Saving configuration to:", path)
+    stream.close()
+
+def upgrade(database, filename):
+    """
+    Upgrades existing installs to new versions
+    """
+    if database['configVersion'] <= 2:
+        database['groupsdir'] = "groups/"
+        if not os.path.isdir(database['basedir'] + database['groupsdir']):
+            os.mkdir(database['basedir'] + database['groupsdir'])
+        command = prompt("What character will will bot reconize as a command? (!): ", default="!")
+        database['command'] = command
+    if database['configVersion'] <= 4:
+        database['basedir'] = os.getcwd() + "/" + database["nick"] + "/"
+        database['logs'] = 'debug'
+    if database['configVersion'] <= 5:
+        database['plugin_config'] = {}
+    if database['configVersion'] < 7:
+        database['logs'] = 'info'
+        database['plugins'] = ['admin']
+        database['plugin_config'] = {}
+    if database['configVersion'] < 9:
+        database['length'] = 500
+    if database['configVersion'] < 10:
+        database['servers'] = {}
+        database['servers'][database['network_name']] = {
+            'server': database['server'], 
+            'port': database['port'], 
+            'channels': database['channels'], 
+            'command': database['command']
+            }
+        del database['server']
+        del database['channels']
+        del database['port']
+        del database['command']
+        del database['network_name']
+    
+    database['configVersion'] = CONFIG_VERSION
+    saveConfig(filename, database)
+    return
+    
+if __name__ == "__main__":
+    if not main():
+        output("Wizard failed.  Nothing written to disk")
+    else:
+        output("Setup completed.")

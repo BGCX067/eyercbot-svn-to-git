@@ -1,0 +1,19 @@
+stat_channels: ['#MyChannel',]
+auto_update: True
+
+# Trailing slash for any option that doesn't point to a file
+pisg_path: /usr/bin/pisg
+cfg_path: /path/to/pisg.cfg
+url: http://mystatssite.com/
+man_message: 'Channel stats manually updated :: '
+auto_message: 'Channel stats automatically updated :: '
+use_ftp: True
+ftp_server: 'ftp.mystatssite.com'
+ftp_user: 'username'
+ftp_pass: 'password'
+ftp_path: 'public_html/'
+# Moves the generated file to another destination on the local machine
+# Make sure the script has permission to write to that directory
+# Non functioning
+use_move: False
+move_dest: None

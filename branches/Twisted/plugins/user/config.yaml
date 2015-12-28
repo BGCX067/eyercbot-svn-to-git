@@ -1,0 +1,9 @@
+# Configuration for Users plugin
+# Default group sets the name of the gorup for the default permissions for all users with no group
+# Registered group is the name of the group that the user joins as when registeres with the bot.  Leave as default if youw ant no change.
+
+---
+default_group: default
+registered_group: default
+user_path: users/
+group_path: groups/

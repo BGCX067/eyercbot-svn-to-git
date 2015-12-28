@@ -1,0 +1,45 @@
+The obligatory readme!
+
+Installation:
+Linux (and I assume BSD)
+*chmod EyeRCbot.py to execute.
+*Configuration is done by an yaml config file.  An example file which has all the needed parameters is in botconfig.example.yaml.  Please make a copy of this file instead of editing it directly.  You may name it whatever you want.  You may also run setup.py to help set up the first configuration files for you.
+
+Windows:
+*Configuration is done by an yaml file.  An example file which has all the needed parameters is in botconfig.example.yaml.  Please make a copy of this file instead of editing it directly.  You may name the file whatever you want. You may also run setup.py to help set up the first configuration files for you.
+
+Both:
+* Copy the programs you wish to load with your bot from the available plugins folder to plugins.  The stats, feed, and chat plugins require to be opened and their configuration set appropriately.  The chat programs requires a working megahal installation with the mh_python.py placed in the lib folder.
+* Edit the default.yaml file in groups to explicitly state which plugins can be used by anyone. 
+
+
+Running
+Linux:
+EyeRCbot requires one command line parameter: the yaml bot config file.  Executing on a *nix system would look something like "./EyeRCbot.py myconfig.yaml".
+
+Windows:
+For now EyeRCbot needs to be run by command prompt in the folder main.py is in.  EyeRCbot requires one command line parameter: the yaml bot config file.  Executing on a windows system would look something like "python EyeRCbot.py myconfig.yaml".
+
+This bot has only been tested to work on Linux 2.6.24 and Windows XP SP3 32 bit with Python 2.5.
+
+Please report any compatibility issues here: http://code.google.com/p/eyercbot/issues/list
+
+There is currently little in the way of error control, and due to the threading for the scheduler the bot will not return to prompt on a fatal error.  You will have to manually kill the python thread and please report the error to the issue list.
+
+Some commands:
+!search google <search term>
+!search wikipedia <search term>
+!xrl <url to shrink>
+!stats update
+!owner die
+
+Plugins that will need to be configured
+stats.py
+
+Ctcp the bot the password and the bot will reload all the plugins in the plugin folder
+
+
+Known issues:
+Very little error correction or recovery
+Logger does not parse colors correctly
+Search plugin is very primitive compared to the eggdrop incth-google unofficial script

@@ -1,0 +1,17 @@
+#summary Random ideas we had in chat
+
+= Forum interaction = 
+
+<croxis> lol here is a frightening idea
+
+ LogicSequence prepares to be scared
+
+<croxis> there is some scripts out there for blogging in an irc chatroom
+
+<LogicSequence> oh my
+
+<croxis> i could do something similar but we have our own forums thread instead =p
+
+<LogicSequence> i like it
+
+<croxis> and with an rss reader anyone else who posts in that thread will be pasted (up to a limit) in here

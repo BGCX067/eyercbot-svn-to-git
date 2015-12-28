@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+"""
+EyeRCbot 2009 by croxis
+
+This is the main program for EyeRCbot
+"""
+
+import optparse
+import yaml
+import eyercbot
+
+def main(config_name):
+    stream = open(config_name)
+    database = yaml.load(stream)
+    if database['configVersion'] < eyercbot.CONFIG_VERSION:
+        print("This install of EyeRCbot is out of date.  Please run eyercbot_setup in this folder to upgrade the install")
+        return
+    stream.close()
+    eyercbot.config = database
+    eyercbot.init(database)
+    #eyercbot.send('connect all')
+    #eyercbot.bot = EyeRCBot.Bot(database['server'], database['port'], database['nick'], database['nick'], database['nick'], database['nick'], database['nick'], database['channels'])
+    #eyercbot.bot.connect()
+    #eyercbot.bot.start()
+    
+
+if __name__ == "__main__":
+    parser = optparse.OptionParser()
+    
+    (options, args) = parser.parse_args()
+    
+    if len(args) > 1:
+        parser.error("""Only one configuration option should be specified.""")
+    elif not args:
+        parser.error("""It seems you've given me
+        no configuration file.  If you have a configuration file, be sure to
+        tell its filename.  If you don't have a configuration file, read
+        docs/GETTING_STARTED and follow its directions.""")
+    else:
+        config_name = args.pop()
+        main(config_name)

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tasks SYSTEM "Tasks-4.1.dtd">
+<!-- eric4 tasks file for project TwistedEye -->
+<!-- Saved: 2008-09-26, 16:53:27 -->
+<Tasks version="4.1">
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: not every company page has a link to IMDbPro, so</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:42</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Dir>imdb</Dir>
+        <Dir>parser</Dir>
+        <Dir>http</Dir>
+        <Name>searchCompanyParser.py</Name>
+      </Filename>
+      <Linenumber>60</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: it's slow!  use _only_ the unpack function.</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:42</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Dir>imdb</Dir>
+        <Dir>parser</Dir>
+        <Dir>local</Dir>
+        <Name>utils.py</Name>
+      </Filename>
+      <Linenumber>130</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: it's slow!  A better (a _real_!) algorithm is required!</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:42</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Dir>imdb</Dir>
+        <Dir>parser</Dir>
+        <Dir>local</Dir>
+        <Name>utils.py</Name>
+      </Filename>
+      <Linenumber>156</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: it's absolutely unclear what we should do to correctly</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:42</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Dir>imdb</Dir>
+        <Dir>parser</Dir>
+        <Dir>sql</Dir>
+        <Name>dbschema.py</Name>
+      </Filename>
+      <Linenumber>181</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: this whole module was written in a veeery short amount of time.</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:42</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Dir>imdb</Dir>
+        <Dir>parser</Dir>
+        <Dir>sql</Dir>
+        <Name>__init__.py</Name>
+      </Filename>
+      <Linenumber>27</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Finish fixing to match new bot system</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:43</Created>
+    <Resource>
+      <Filename>
+        <Dir>plugins</Dir>
+        <Dir>seen</Dir>
+        <Name>plugin.py</Name>
+      </Filename>
+      <Linenumber>5</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: timezone conversion (pain!)</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:43</Created>
+    <Resource>
+      <Filename>
+        <Dir>plugins</Dir>
+        <Dir>time</Dir>
+        <Name>plugin.py</Name>
+      </Filename>
+      <Linenumber>2</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: doesn't match persons with ' in the name.</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:46</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Dir>imdb</Dir>
+        <Name>utils.py</Name>
+      </Filename>
+      <Linenumber>641</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: does it make sense at all?  Return a unicode doesn't</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 11:19:46</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Dir>imdb</Dir>
+        <Name>utils.py</Name>
+      </Filename>
+      <Linenumber>723</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Make sure this will work as a deferred or task</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 20:56:30</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>Eyecron.py</Name>
+      </Filename>
+      <Linenumber>11</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Reduce this function to only process the raw time string and return seconds</Summary>
+    <Description></Description>
+    <Created>2008-09-19, 20:56:30</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>Eyecron.py</Name>
+      </Filename>
+      <Linenumber>42</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Add code so that function is only called if plugin is loaded for that channel?</Summary>
+    <Description></Description>
+    <Created>2008-09-25, 22:29:33</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>EyeRCprotocol.py</Name>
+      </Filename>
+      <Linenumber>60</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="True">
+    <Summary>FIXME: Special testing shutdown code</Summary>
+    <Description></Description>
+    <Created>2008-09-25, 22:29:33</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>EyeRCprotocol.py</Name>
+      </Filename>
+      <Linenumber>80</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: This should be threaded?</Summary>
+    <Description></Description>
+    <Created>2008-09-25, 22:29:33</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>EyeRCprotocol.py</Name>
+      </Filename>
+      <Linenumber>98</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Remove !command from string before passing?</Summary>
+    <Description></Description>
+    <Created>2008-09-25, 22:29:33</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>EyeRCprotocol.py</Name>
+      </Filename>
+      <Linenumber>99</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Command aliases</Summary>
+    <Description></Description>
+    <Created>2008-09-25, 22:29:33</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>EyeRCprotocol.py</Name>
+      </Filename>
+      <Linenumber>100</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Move these?  #</Summary>
+    <Description></Description>
+    <Created>2008-09-25, 22:29:33</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>EyeRCprotocol.py</Name>
+      </Filename>
+      <Linenumber>196</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Look into transforming plugins into twisted plugins</Summary>
+    <Description></Description>
+    <Created>2008-09-25, 22:29:33</Created>
+    <Resource>
+      <Filename>
+        <Dir>EyeRClib</Dir>
+        <Name>EyeRCprotocol.py</Name>
+      </Filename>
+      <Linenumber>235</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Transform botmem yaml into a yaml_all of all servers to load.  This will be in a list or dict</Summary>
+    <Description></Description>
+    <Created>2008-09-26, 16:33:13</Created>
+    <Resource>
+      <Filename>
+        <Name>EyeRCbot.py</Name>
+      </Filename>
+      <Linenumber>48</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Make sure we have library function to save and write to disk (do we?)</Summary>
+    <Description></Description>
+    <Created>2008-09-26, 16:33:13</Created>
+    <Resource>
+      <Filename>
+        <Name>EyeRCbot.py</Name>
+      </Filename>
+      <Linenumber>106</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" bugfix="False">
+    <Summary>TODO: Enhance library so we can pass leave message as well</Summary>
+    <Description></Description>
+    <Created>2008-09-26, 16:51:58</Created>
+    <Resource>
+      <Filename>
+        <Dir>plugins</Dir>
+        <Dir>channel_logger</Dir>
+        <Name>plugin.py</Name>
+      </Filename>
+      <Linenumber>111</Linenumber>
+    </Resource>
+  </Task>
+</Tasks>

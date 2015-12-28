@@ -1,0 +1,85 @@
+#summary Description of the Event class in all instances.
+#labels Documentation
+
+= Introduction =
+
+*function*
+ * event.eventtype()
+ * event.arguments()
+ * event.source()
+ * event.target()
+
+
+= Details =
+
+*on_welcome*
+ * welcome
+ * ['Welcome to The IRC Chat Network vbBOT!~vbBOT@ip68-104-204-196.ph.ph.cox.net']
+ * goldfish.syd.au.irc-chat.net
+ * Receiver _nick_
+
+*on_ctcp*
+ * ctcp
+ * ['VERSION']
+ * SecureServ!TS@stats.irc-chat.net
+ * Receiver _nick_
+
+*on_join*
+ * join
+ * []
+ * _nick!name@hostmask_
+ * _#channel_
+
+*on_kick*
+ * kick
+ * ['nick', 'message']
+ * The Kicker: _nick!name@hostmask_
+ * _#channel_
+
+*on_mode* (channel)
+ * mode
+ * ['+m']
+ * Mode Changer: _nick!name@hostmask_
+ * _#channel_
+
+*on_mode* (nick)
+ * mode
+ * ['+o', 'nick']
+ * Mode Changer: _nick!name@hostmask_
+ * _#channel_
+
+*on_nick*
+ * nick
+ * []
+ * OLD_NICK: _nick!name@hostmask_
+ * NEW_NICK: _nick_
+
+*on_part*
+ * part
+ * []
+ * _nick!name@hostmask_
+ * _#channel_
+
+*on_pubmsg*
+ * pubmsg
+ * ['=p']
+ * Sender: _nick!name@hostmask_
+ * _#channel_
+
+*on_privmsg*
+ * privmsg
+ * ['spam']
+ * Sender: _nick!name@hostmask_
+ * Receiver: _nick_
+
+*on_quit*
+ * quit
+ * ['Quit: MESSAGE']
+ * _nick!name@hostmask_
+ * None
+
+*on_topic*
+ * topic
+ * ['NEW TOPIC']
+ * Topic Changer: _nick!name@hostmask_
+ * _#channel_

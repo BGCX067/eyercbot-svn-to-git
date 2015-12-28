@@ -1,0 +1,293 @@
+#labels Phase-Support,CivFanatics_EyeRCbot_FAQs
+Civfanatics Chat Guide and Frequently Asked Questions (FAQ):
+
+v0.3.1
+
+Welcome to the Civilization Fanatics Chat room.  This chat room uses the Internet Relay Chat (IRC) protocol, and can be accessed by a variety of different means, from software programs such as mIRC and XChat, to the in-browser java plug-in on the Civilization Fanatics Center (CFC) website.  
+
+
+Getting Started:
+
+Questions:
+
+
+1.	How do I get into the chat room using the CFC website plug-in?
+
+	If you are using the in-browser chat plug-in on the CFC website click on “Chat,” this will load the java IRC chat plug-in.  Next, fill out the name you wish to go by in the chat room in the ‘nick name’ field, or leave the entry as Guest.  Leave the remaining fields alone, the default information is correct.  Press “Connect Now!” to connect to the chat room.  Give the page some time to load after pressing “Connect Now!”
+
+
+2.	How do I get into the chat room using a software program, such as mIRC?
+
+	As there are many programs able to access IRC chat rooms, no one guide can tell you precisely how to access a chat room from your specific software, but there are general methods that can help you get there.  After you have opened your chat software, you will want to choose to connect to a new server.  After you have entered your nickname information you will need to tell the software what server to connect to.  The Civfanatics chat room is located on the IRC-Chat server, so you will need to enter irc.irc-chat.net as the server, and set the port to 6667.  Once you have connected to the IRC-Chat server, you will need to join the Civfanatics chat room itself.  To do this, type in /join #civfanatics in the server window (it will look like a chat window).
+
+
+3.	What is the chat room server and chat name?
+
+	The chat room is on the irc.irc-chat.net server (port 6667), and the chat name is #civfanatics.
+
+
+4.	What are the chat room rules?
+
+	The chat room rules can be found at http://forums.civfanatics.com/faq.php?faq=chatrules, and by typing !rules_plugin_temp.
+
+
+5.	How do I ask a question or a message in the chat room?
+
+	There is a blank field at the bottom of screen where your cursor will be blinking.  Simply type in your message or question there and press “enter,” the message will be displayed in the window above and everyone in the chat room will be able to see it.
+
+
+6.	How will I know if someone has answered me?
+
+	Other user’s comments or answers will appear in the chat room just as yours did, their nick name will appear inside the < > symbols to the left of their statement, this indicates who said the comment.
+
+
+7.	How do I see who is in the chat room?
+
+	To the right of the main chat room window is a list of people in the chat room, this is called the ‘user list.’
+
+
+8.	Why do some people have different symbols (like ‘+’, ‘%’, ‘@’, and ‘!’) in front of their names?
+
+	Users with special characters like ‘+’, ‘%’, ‘@’, and ‘!’ in front of their nicknames are chat room operators and personnel or special users.  Users with ‘@’ in front of their names are chat room operators; users with ‘%’ in front of their names are “half-operators,” and for all intents and purposes, are the same as chat room operators.  Users with ‘!’ in front of their names are chat room administrators, and users with ‘+’ in front of their names are special “voiced” users.
+
+
+9.	What is a chat room operator (users with ‘%’, ‘@’, or ‘!’)?
+
+	A chat room operator is a user that has been chosen to be “in control” of the chat room.  Think of these users as you do moderators on a message board forum.  They are there to help you with any questions you may have, and to prevent troublemakers from causing problems in the chat room.  Chat room operators (as well as half-operators and administrators) have the authority to kick (remove from the chat room) any user that is not following the chat room rules or is being a menace to others.  They also have the authority to temporarily or permanently ban a user from returning to the chat room.
+
+
+10.	Can I be a chat room operator?
+
+	No.  Chat room operators are chosen by the CFC website administrators and the current Civfanatics Chat Room operators.
+
+
+11.	Who are the current chat room operators, administrators, and half-operators?
+
+	The current chat room administrator(s) are: Thunderfall, Chieftess, Croxis (aka Mobilecroxis), Strider, and Gogf (aka ArtVandelay).  The current chat room operator(s) are LogicSequence, Eye (bot), and Guardian (bot); and a current half-operator(s) is vbraun.
+
+
+12.	I’ve been kicked or banned by a chat room operator, can I rejoin the chat room?
+
+	If you have been kicked by a chat room operator, it was no doubt for breaking the rules or being a menace to others.  You may rejoin the chat room after you have been kicked, but you are warned to behave properly and obey the chat room rules, or you will be kicked again and possibly banned.  If you have been banned from the chat room you will be unable to rejoin the room until a chat room operator un-bans you.  The length of ban is up to the chat room operators, and can last anywhere from a few minutes to days, or it may even be permanent.
+
+
+13.	What does “someone changes mode to” or a “mode change” mean?
+
+	A mode change is when an attribute is applied to something in the chat room, or the chat room itself.  For example, if Nickname’s mode is changed to +o, that user has become a chat room operator.  If it is changed to -o the user has been stripped of his operator powers.  Mode changes can also be applied to the chat room itself, for example an operator can moderate the chat room by setting it’s mode to +m, or make it secret by changing it’s mode to +s.
+
+
+14.	How do I change my nickname in the chat room?
+
+	To change your nickname, type in /nick YourNewNickname (type the new name you desire where YourNewNickname is).
+
+
+15.	How do I send private message to someone in the chat room?
+
+	To send a private message to someone in the chat room, double click on their name in the ‘user list’ which will open a new ‘chat’ window where only you and that user can speak.  Anything you say to them or that they say to you in that window will only be seen by the two of you.  You can also type in /query NickName to do the same thing (where NickName is the nickname of the user you wish to message privately).
+
+
+16.	How do I show an action in the chat room?
+
+	Sometimes you may wish to indicate that you are doing something in the chat room, rather than simply talking or sending a message.  For example, instead of saying, “I am dancing,” you could show this action by getting IRC to send this message, “* YourNickname is dancing.”  To do this, type /me before your action, there is no need to type your nickname at all at this point.  In the example above, you would type /me is dancing, which would display as, “*YourNickname is dancing.”
+
+
+17.	I’m going to be away from the computer, but I don’t want to leave the chat room.  How do I let people know I’m away?
+
+	You can set yourself to ‘away’ mode by typing /away AwayMessage (where AwayMessage is your personalized message about why you are away.  For example, you could type /away I’m going to the store and will be back soon, then if anyone privately messages you, your message will display to them.  Type /away again when you return to turn off your away message.
+
+
+18.	How do I turn off my away message?
+
+	To turn off your away message, type /away again.
+
+
+19.	Can I use different colored fonts in the chat room?
+
+	No.  Colored fonts are not supported at this time.
+
+
+20.	Can I use bold or underlined text in the chat room?
+
+	Yes.  To user bold text press ‘CTRL + B’ before the text you want to be bold, and ‘CTRL + B’ again after the text you want to be bold.  Do the same for underlined text, except use ‘CTRL + U’.
+
+
+21.	How can I find out more information about a user in the chat room?
+
+	To find out more information about a user in the chat room, type /whois NickName (Where NickName is the nickname of the user you wish to know more about).
+
+
+22.	I’ve tried to type a message, but it says “cannot send to channel, room is moderated” what does that mean?
+
+	When a chat room is moderated, that means that only chat room operators, administrators, half-operators, and users that have been given a ‘voice’ (users with + in front of their names) can speak freely.  Moderation is rarely used in the Civfanatics chat room, so there is little need to worry about it.  An example of a time when the chat room may be moderated is when a special developer chat has been scheduled, and questions are relayed through the operators to the special guests.
+
+
+23.	Who are Guardian and Eye?  I always see them in the chat room!
+
+	Guardian and Eye are chat room bots (robots).  Guardian’s duty is to identify chat room operators, administrators, and half-operators as they enter the chat room and give them their appropriate powers.  Eye is a multipurpose utility bot with many different functions that are outlined in a different FAQ.
+
+
+24.	Where can I find statistics about the chat room, such as common users, how many lines have been sent, and other fun facts?
+
+	You can find all the chat room statistics at http://cfc.croxis.net/civfanatics.html.
+
+
+
+
+
+Civilization Games Questions:
+
+Questions:
+
+1.	How do I install Civilization 3 or 4?
+
+	To install Civilization 3 or 4 you must have a legitimate (legal) copy of the game discs.  If you are running windows, simply open your CD-ROM or DVD-ROM drive and insert the disc labeled ‘Disc 1’ or ‘Installation Disc’ or some such variant.  The setup window will launch and there will be an option to install the game.  Choose this option and follow the on screen instructions to install the game.  Do not forge to patch afterwards!
+
+
+2.	How do I install an expansion pack for Civilization 3 or 4?
+
+	Installing an expansion pack is as easy as installing the actual Civilization 3 or 4 game.  You MUST first have Civilization 3 or 4 installed (whichever is the base for the expansion you are installing), then simply install the expansion pack as you did the game.  And remember to patch the expansion as well!
+
+
+3.	I downloaded Civilization 3, 4, or one of their expansions, but it is not working, what do I do?
+
+	Civilization Fanatics Center, its forums, and the chat room DO NOT support illegal downloads of any Civilization game.  Discussing such downloads is grounds for banning.  Therefore, we offer no support or help for illegally downloaded versions of Civilization (warez, No-CD Cracks, and Torrented downloads included).
+
+
+4.	Where can I legally download Civilization games?
+
+	You can legally download Civilization games from Steam (http://www.steampowered.com/v/index.php) and Direct2Drive (http://www.direct2drive.com/). 
+
+
+5.	What is a patch and why do I need it?
+
+	A patch is a small piece of software designed to update or fix problems with a computer program (or game) or its supporting dat	A. This includes fixing bugs, replacing graphics and improving the usability or performance.
+
+
+6.	How do I install a patch for Civilization 3 or 4, or one of their expansions?
+
+	There are two ways to patch Civilization 3, 4, and their expansions.  The first method is to download and install the patch files from the manufacture’s website.  Go to http://www.firaxis.com/support/ and select the appropriate game, then select ‘patches and downloads.’  Always download the newest patch available.  Once the download is complete, open the file and follow the on screen instructions.  The second method is through the game itself.  Load Civilization 3 or 4, and at the main menu, select “Advanced,” then select “check for updates.”  If there is a patch available, select “install” and the game will download the patch and begin the installation process for you.  At that point, simply follow the on-screen instructions.
+
+
+7.	What is a mod?
+
+	A Mod or modification is a term generally applied to computer games. Mods are made by the general public or a developer, and can be entirely new games in themselves. They can include new items, weapons, characters, enemies, models, textures, levels, story lines, music, and game modes.
+
+
+8.	Where can I find mods for Civilization 3 or 4?
+
+	You can find mods for Civilization 3, 4, and their expansions in the downloads section of the CFC website, located here: http://forums.civfanatics.com/downloads.php.
+
+
+9.	How do I install a mod for Civilization 3 or 4, or one of their expansions?
+
+	There are many different ways to install a mod, too many to make a comprehensive guide here.  If you are unsure how to install a specific mod, please check the CFC forum thread for that mod, or contact the mod author directly.  However, in general terms, there are two common forums.  The first is an executable (.exe) file.  To install a mod in this form, open the .exe file and follow the on screen instructions.  The second is a zipped archive (.zip) file.  To install a mod in this form you must extract (unzip) the archive and place it in the mods folder.
+
+
+10.	What is a zip file?
+
+	The ZIP file format is a lossless data compression and archival format. A ZIP file contains one or more files that have been compressed, to reduce their file size, or stored as-is.
+
+
+11.	How do I unzip a zip file?
+
+	To unzip or extract a .zip file, ‘right click’ on the file and select “extract all,” then follow the on-screen instructions.
+
+
+12.	Where do I put a mod?
+
+	This varies from game to game, and depends on the type of mod file you received.  The mod directories are as follows: 
+	Civilization 4: ‘...\My Documents\My Games\Sid Meier's Civilization 4\MODS’ 
+	Civilization 4: Warlords: ‘...\My Documents\My Games\Warlords\MODS’ 
+	Civilization 4: Beyond the Sword: ‘...\My Documents\My Games\Beyond the Sword\MODS’
+
+
+13.	My mod is not working, what do I do?
+
+	There could be any number of reasons why your mod is not working, the best way to resolve issues of this nature is to check the CFC forums for help, or contact the mod author directly.
+
+
+14.	There is a problem (bug) in a mod, whom do I tell?
+
+	If you have found a problem or bug in a mod, do not ask someone in the chat room for help, they are not the mod’s author, and cannot affect changes to the mod.  Instead, post in the mod’s forum thread, or contact the mod’s author directly.
+
+
+15.	How do I make a mod?
+
+	Some great tutorials on how to create a mod are located here: http://forums.civfanatics.com/showthread.php?t=262402, and http://forums.civfanatics.com/showthread.php?t=173061.  For all information concerning mod creation, look in the forum threads here: http://forums.civfanatics.com/forumdisplay.php?f=177.
+
+
+16.	How do I add my own units to the game?
+
+	Some great tutorials for adding units to the game can be found here: http://forums.civfanatics.com/showthread.php?t=162118, http://forums.civfanatics.com/showthread.php?t=139721. For all information concerning mod creation, look in the forum threads here: http://forums.civfanatics.com/forumdisplay.php?f=177. 
+
+
+17.	How do I edit or create other things, like buildings and techs?
+
+	For all information concerning mod creation, look in the forum threads here: http://forums.civfanatics.com/forumdisplay.php?f=177. 
+
+
+18.	What is XML?
+
+	The Extensible Markup Language (XML) is a general-purpose specification for creating custom markup languages. It is classified as an extensible language because it allows its users to define their own elements. Its primary purpose is to help information systems share structured data, particularly via the Internet, and it is used both to encode documents and to serialize dat	A. It started as a simplified subset of the Standard Generalized Markup Language (SGML), and is designed to be relatively human-legible.
+
+
+19.	How do I edit an XML file?
+
+	You may use any text editor, such as notepad, wordpad, or Microsoft word to edit an XML file.
+
+
+20.	Can I play Civilization with other people?
+
+	Yes!  Civilization has supported multiplayer modes in Civilization 2: Gold, Civilization 2: Test of Time, and all versions of Civilization 3 and 4.
+
+
+21.	How do I play Civilization with other people?
+
+	To play a multiplayer game, start Civilization and select “Multiplayer.”  Then you must select the type of multiplayer game you wish to play.  If you want to play right away with other gamers online, select “Internet Games.”  You must then create an account or login to an existing multiplayer account, then follow the on-screen instructions.
+
+
+22.	Do people still play Civilization 2 multiplayer?
+
+	Very few, if any, play Civilization 2 multiplayer any more.
+
+
+23.	Do people still play Civilization 3 multiplayer?
+
+	A few people still play Civilization 3 multiplayer.
+
+
+24.	What Civilization do mot people play online?
+
+	Civilization 4 (particularly with the Beyond the Sword expansion) is the most popular Civilization multiplayer game at this time.
+
+
+25.	Are people playing multiplayer Civilization right now?
+
+	Check and see!  Start the game and enter the multiplayer lobby and you will find out.  Chances are there are many games being played and waiting for players to join!
+
+
+26.	Civilization 3, 4, or one of their expansions is not working properly, what do I do?
+
+	There are MANY reasons why your game may not be working.  In most cases, a few simple steps can correct the problem.  The first step you should take is to patch your game!  The first method to patch your game is to download and install the patch files from the manufacture’s website.  Go to http://www.firaxis.com/support/ and select the appropriate game, then select ‘patches and downloads.’  Always download the newest patch available.  Once the download is complete, open the file and follow the on screen instructions.  The second method is through the game itself.  Load Civilization 3 or 4, and at the main menu, select “Advanced,” then select “check for updates.”  If there is a patch available, select “install” and the game will download the patch and begin the installation process for you.  At that point, simply follow the on-screen instructions. If that does not solve your problem, you should download the most recent version of video and audio drivers for your computer’s hardware.  To do this, find out the manufacturer of your video and audio devices, go to their websites, and search for the latest drivers.  Download and install these drivers by following the manufacturer’s instructions.
+
+
+27.	What is a driver?
+
+	A device driver, or software driver, is a computer program allowing higher-level computer programs to interact with a device. A driver typically communicates with the device through the computer bus or communications subsystem to which the hardware is connected. When a calling program invokes a routine in the driver, the driver issues commands to the device. Once the device sends data back to the driver, the driver may invoke routines in the original calling program. Drivers are hardware-dependent and operating-system-specific. They usually provide the interrupt handling required for any necessary asynchronous time-dependent hardware interface.
+
+
+28.	Where do I get drivers for my computer?
+
+	Where you get your drivers depends on your computer configuration, manufacturer, and manufacturer of the specific hardware in question.  If you have a laptop, you must always get your drivers from your laptop manufacturer’s website.  If you have a desktop, you must identify what manufacturer has made your hardware and visit their website.  The most typical video card manufacturer’s websites are: 
+	ATi: http://www.amd.com/us-en/ 
+	nVidia: http://www.nvidia.com/page/home.html 
+
+
+29.	I have patched my game and downloaded the latest video and audio drivers, but it is still now working, what do I do?
+
+	If you have patched your game, and have the latest video and audio drivers for your hardware, then you MUST take careful consideration to write down the specific error message or problem you are having in order to receive the best help possible.
+
+
+30.	Everything I have tried has failed, and my game still does not work, what do I do?
+
+	Try uninstalling your game, and then re-installing it and applying the latest patches again.

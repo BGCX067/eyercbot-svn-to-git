@@ -1,0 +1,14 @@
+#summary How user control will work
+#labels Phase-Implementation
+
+= Introduction =
+
+There will be two levels of user control: Basic and Advanced
+
+= Basic =
+
+Basic user control will be integrated into the main program.  It's only function is to make sure that only certain users can do mission critical functions, such as !die or !plugins reload.  The user list will be in the bot configuration file and will look for the user file in users/, where the hostmask  information is stored.  The user will have to previously registered.  A setup script will be written to establish the first user.
+
+= Advanced =
+
+The advanced user script is an option plugin which, through configuration files, allows users to register themselves, password change and set, add or remove hostmasks, set aliases, and user level plugin control.

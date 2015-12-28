@@ -1,0 +1,6 @@
+channels: ['#EyeRCbot']
+name: EyeRC
+nick: EyeRC
+password: thor
+port: 6667
+server: localhost

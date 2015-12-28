@@ -1,0 +1,22 @@
+---
+name: default
+permissions:
+  whitelist:
+  - user.register
+  - user.help
+  - user.set
+  - xrl
+  - civfanatics
+  - search
+  - seen
+  - time
+  - translate
+  - blackjack
+  - quote
+  - madlib
+  - user.index
+  - uno
+  - faq
+  blacklist:
+  -
+---

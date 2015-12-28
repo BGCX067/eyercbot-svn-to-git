@@ -1,0 +1,18 @@
+---
+name: Example
+hostmasks:
+- '*!*@*.croxis.net'
+- '*!*@*.never7.net'
+password: example
+group: general
+permissions:
+  blacklist: 
+  - quote
+  whitelist:
+  - stats.update
+stats:
+  gender: male
+  avatar: http://www.google.com/logos/july4th08.gif
+  aliases:
+    - Examplehomies
+---

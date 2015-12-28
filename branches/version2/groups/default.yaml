@@ -1,0 +1,6 @@
+!!python/object:lib.Group.Group
+name: default
+permissions:
+  blacklist: []
+  whitelist: [xrl, search, stats.index, help, faq, user.register, chat, Time, civfanatics,
+    translate]

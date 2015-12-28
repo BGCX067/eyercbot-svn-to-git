@@ -1,0 +1,7 @@
+# Configuration for Channel Logger Plugin
+# Remember trailing slash for all paths
+# '#channel' quotes are needed to prevent parser from treating # as comments
+# '#channel': /path/realative/or/absolute/
+---
+'#civfanatics': log/
+'#erebus': log/

@@ -1,0 +1,12 @@
+#summary Memory footprint of EyeRCbot vs Eye (eggdrop)
+
+ * Rev 31:  6.9 MB  | Eggdrop: 82 MB   | 11.8X | -- 
+ * Rev 42:  10.5 MB | Eggdrop: 82 MB   | 7.8X  | Missing quotes and notes
+ * Rev 51:  18.5 MB | Eggdrop: 93.4 MB | 5.0X  | pmap, both on same machine
+ * Rev 60:  20.2 MB | Eggdrop: 93.9 MB | 4.6X  | pmap, both same machine, megahal on EyeRC
+ * Rev 63:  20.2 MB | Version 1.0
+ * Rev 71:  20.2 MB
+ * Rev 81:  20.2 MB | Version 1.2.1 | Functioning notes
+ * Rev 200: 21.1 MB | Version 1.4   | 4.4x
+ * Rev 240: 21.9 MB | Version 1.9   | Twisted backend
+ * Rev 300: 23.6 MB | Version 1.9.6
